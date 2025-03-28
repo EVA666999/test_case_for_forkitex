@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+requests
+tronpy
+SQLAlchemy
+alembic
+psycopg2
+pytest 
+pytest-asyncio 
+httpx

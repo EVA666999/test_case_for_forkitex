@@ -1,9 +1,9 @@
-from fastapi.testclient import TestClient
-from app.main import app
 import pytest
+from fastapi.testclient import TestClient
 
+from app.main import app
+from app.sqlalchemy.db import Base, SessionLocal, engine
 
-from app.sqlalchemy.db import Base, engine, SessionLocal
 
 @pytest.fixture
 def client():

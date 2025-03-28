@@ -1,7 +1,7 @@
-from app.sqlalchemy.db import Base
+from sqlalchemy import Boolean, Column, DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Column, Float, ForeignKey, Integer, String, Boolean, DateTime
 
+from app.sqlalchemy.db import Base
 
 
 class Balance(Base):

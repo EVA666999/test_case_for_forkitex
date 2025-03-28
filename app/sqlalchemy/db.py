@@ -1,7 +1,8 @@
 import os
-from sqlalchemy.orm import DeclarativeBase, sessionmaker
-from sqlalchemy import create_engine
+
 from dotenv import load_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 load_dotenv()
 
@@ -17,6 +18,7 @@ engine = create_engine(DATABASE_URL, echo=True)
 
 # Синхронный sessionmaker
 SessionLocal = sessionmaker(bind=engine)
+
 
 class Base(DeclarativeBase):
     pass

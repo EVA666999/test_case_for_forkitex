@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.routers import balance
 
+from app.routers import balance
 
 app = FastAPI()
 

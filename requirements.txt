@@ -8,3 +8,5 @@ psycopg2
 pytest 
 pytest-asyncio 
 httpx
+isort
+black
